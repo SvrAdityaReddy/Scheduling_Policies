@@ -1,0 +1,72 @@
+Policy is : FCFS
+p1 0 3 3 3 0
+p2 2 6 9 7 1
+p3 4 4 13 9 5
+p4 6 5 18 12 7
+p5 8 2 20 12 10
+Process Schedule : p1 p2 p3 p4 p5 
+Mean Waiting Time : 4.600000
+Mean Turn Around Time : 8.600000
+Policy is : SJF
+p1 0 3 3 3 0
+p2 2 6 9 7 1
+p5 8 2 11 3 1
+p3 4 4 15 11 7
+p4 6 5 20 14 9
+Process Schedule : p1 p2 p5 p3 p4 
+Mean Waiting Time : 3.600000
+Mean Turn Around Time : 7.600000
+Policy is : Priority
+p1 0 3 3 3 0
+p2 2 6 9 7 1
+p5 8 2 11 3 1
+p4 6 5 16 10 5
+p3 4 4 20 16 12
+Process Schedule : p1 p2 p5 p4 p3 
+Mean Waiting Time : 3.800000
+Mean Turn Around Time : 7.800000
+Policy is : HRRN
+p1 0 3 3 3 0
+p2 2 6 9 7 1
+p3 4 4 13 9 5
+p5 8 2 15 7 5
+p4 6 5 20 14 9
+Process Schedule : p1 p2 p3 p5 p4 
+Mean Waiting Time : 4.000000
+Mean Turn Around Time : 8.000000
+Policy is : SRTN
+p1 0 3 3 3 0
+p2 2 6 9 7 1
+p3 4 4 13 9 5
+p4 6 5 18 12 7
+p5 8 2 20 12 10
+Process Schedule : p1 p1 p2 p2 p2 p2 p3 p4 p5 
+Mean Waiting Time : 4.600000
+Mean Turn Around Time : 8.600000
+Policy is RR
+p1 0 3 5 5 2
+p3 4 4 13 9 5
+p5 8 2 15 7 5
+p2 2 6 17 15 9
+p4 6 5 20 14 9
+Process Schedule : p1 p2 p1 p3 p2 p4 p3 p5 p2 p4 p4 
+Mean Waiting Time : 6.000000
+Mean Turn Around Time : 10.000000
+Policy is MLQ
+p1 0 3 3 3 0
+p5 8 2 10 2 0
+p3 4 4 14 10 6
+p4 6 5 17 11 6
+p2 2 6 20 18 12
+Process Schedule : p1 p1 p2 p3 p5 p5 p4 p3 p4 p4 p2 
+Mean Waiting Time : 4.800000
+Mean Turn Around Time : 8.800000
+Policy is MLFQ
+p1 0 3 3 3 0
+p5 8 2 14 6 4
+p2 2 6 17 15 9
+p3 4 4 18 14 10
+p4 6 5 20 14 9
+Process Schedule : p1 p1 p2 p3 p2 p4 p5 p3 p4 p5 p2 p3 p4 
+Mean Waiting Time : 6.400000
+Mean Turn Around Time : 10.400000
