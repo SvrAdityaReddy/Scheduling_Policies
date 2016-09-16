@@ -750,8 +750,8 @@ void MLQ(FILE *out,struct PCB **processes,int count)
 		scanf("%s",Q_name[i]);
 		//printf("%s\n",Q_name[i]);
 		printf("Enter time quantum:");
-		fprintf(out,"Q_level %d : %s : time_quantum = %d\n",i+1,Q_name[i],Q_tq[i]);
 		scanf("%d",&Q_tq[i]);
+		fprintf(out,"Q_level %d : %s : time_quantum = %d\n",i+1,Q_name[i],Q_tq[i]);
 		}
 	//print(Queues[1]);
 	int *pid_array;
@@ -986,8 +986,8 @@ void MLFQ(FILE *out,struct PCB **processes,int count)
 		scanf("%s",Q_name[i]);
 		//printf("%s\n",Q_name[i]);
 		printf("Enter time quantum:");
-		fprintf(out,"Q_level %d : %s : time_quantum = %d\n",i+1,Q_name[i],Q_tq[i]);
 		scanf("%d",&Q_tq[i]);
+		fprintf(out,"Q_level %d : %s : time_quantum = %d\n",i+1,Q_name[i],Q_tq[i]);
 		}
 	//print(Queues[1]);
 	int *pid_array;

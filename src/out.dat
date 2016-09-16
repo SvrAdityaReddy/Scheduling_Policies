@@ -54,9 +54,9 @@ Mean Waiting Time : 6.000000
 Mean Turn Around Time : 10.000000
 Policy is MLQ
 Number of Queues : 3
-Q_level 1 : RR : time_quantum = 0
-Q_level 2 : RR : time_quantum = 0
-Q_level 3 : RR : time_quantum = 0
+Q_level 1 : RR : time_quantum = 1
+Q_level 2 : RR : time_quantum = 2
+Q_level 3 : RR : time_quantum = 3
 p1 0 3 3 3 0
 p5 8 2 10 2 0
 p3 4 4 14 10 6
@@ -67,9 +67,9 @@ Mean Waiting Time : 4.800000
 Mean Turn Around Time : 8.800000
 Policy is MLFQ
 Number of Queues : 3
-Q_level 1 : RR : time_quantum = 0
-Q_level 2 : RR : time_quantum = 0
-Q_level 3 : RR : time_quantum = 0
+Q_level 1 : RR : time_quantum = 1
+Q_level 2 : RR : time_quantum = 2
+Q_level 3 : RR : time_quantum = 3
 p1 0 3 3 3 0
 p5 8 2 14 6 4
 p2 2 6 17 15 9
