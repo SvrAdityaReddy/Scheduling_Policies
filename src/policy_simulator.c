@@ -725,9 +725,12 @@ void MLQ(FILE *out,struct PCB **processes,int count)
 	int no_of_queues=0;
 	float mean_waiting_time=0;
 	float mean_TA_time=0;
+	fprintf(out,"%s\n","Policy is MLQ");
+	printf("Policy is MLQ\n");
 	printf("Enter no_of_queues: ");
 	scanf("%d",&no_of_queues);
 	//printf("%d\n",no_of_queues);
+	fprintf(out,"Number of Queues : %d\n",no_of_queues);
 	struct node *process_schedule;
 	process_schedule=NULL;
 	int *Q_tq;
@@ -747,6 +750,7 @@ void MLQ(FILE *out,struct PCB **processes,int count)
 		scanf("%s",Q_name[i]);
 		//printf("%s\n",Q_name[i]);
 		printf("Enter time quantum:");
+		fprintf(out,"Q_level %d : %s : time_quantum = %d\n",i+1,Q_name[i],Q_tq[i]);
 		scanf("%d",&Q_tq[i]);
 		}
 	//print(Queues[1]);
@@ -762,7 +766,6 @@ void MLQ(FILE *out,struct PCB **processes,int count)
 		{
 		completed_pidarray[i]=0;
 		}
-	fprintf(out,"%s\n","Policy is MLQ");
 	finish_time=processes[0]->at;
 	int last_pid=0;
 	for (i=0;i<count;i++)
@@ -958,6 +961,7 @@ void MLFQ(FILE *out,struct PCB **processes,int count)
 	float mean_waiting_time=0;
 	float mean_TA_time=0;
 	int no_of_queues=0;
+	printf("Policy is MLFQ\n");
 	printf("Enter no_of_queues: ");
 	scanf("%d",&no_of_queues);
 	//printf("%d\n",no_of_queues);
@@ -970,6 +974,8 @@ void MLFQ(FILE *out,struct PCB **processes,int count)
 	print_schedulingpolicies();
 	struct node **Queues;
 	Queues=(struct node **)malloc(sizeof(struct node *)*no_of_queues);
+	fprintf(out,"%s","Policy is MLFQ\n");	
+	fprintf(out,"Number of Queues : %d\n",no_of_queues);
 	for(i=0;i<no_of_queues;i++)
 		{
 		Queues[i]=NULL;
@@ -980,6 +986,7 @@ void MLFQ(FILE *out,struct PCB **processes,int count)
 		scanf("%s",Q_name[i]);
 		//printf("%s\n",Q_name[i]);
 		printf("Enter time quantum:");
+		fprintf(out,"Q_level %d : %s : time_quantum = %d\n",i+1,Q_name[i],Q_tq[i]);
 		scanf("%d",&Q_tq[i]);
 		}
 	//print(Queues[1]);
@@ -995,7 +1002,6 @@ void MLFQ(FILE *out,struct PCB **processes,int count)
 		{
 		completed_pidarray[i]=0;
 		}
-	fprintf(out,"%s","Policy is MLFQ\n");
 	finish_time=processes[0]->at;
 	int last_pid=0;
 	for (i=0;i<count;i++)
