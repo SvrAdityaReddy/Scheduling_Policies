@@ -1,6 +1,14 @@
 # Scheduling_Policies
 The data regarding process are read from input file and processess are sorted according to the order of their arrival time. <br/>
 
+FCFS     - First Come First Serve <br/>
+SJF      - Shorstest Job First <br/>
+HRRN     - Highest Response Ratio Next <br/>
+Priority - Priority <br/>
+SRTN     - Shortest Response Ratio Next <br/>
+RR       - Round Robin <br/>
+
+
 The output of the simulator is of the form <br/>
 
 Policy Name <br/>
